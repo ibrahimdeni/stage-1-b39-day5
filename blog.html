@@ -1,0 +1,187 @@
+<html>
+<head>
+
+    <title>Creating Blog Page</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars3.githubusercontent.com/u/34464790?s=220&v=4">
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+    <body>
+
+        <!-- INI NAVBAR -->
+        <nav>
+
+            <div class="nav-left">
+
+                <ul>
+                    <img src="assets/logo.png" alt="logo"/>
+                    <li>
+                        <a class="home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">My Project</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav-right">
+
+                <a href="contact.html">Contact Me</a>
+
+            </div>
+
+        </nav>
+        
+        <!-- INI BLOG -->
+
+        <h1>Add My Project</h1>
+
+        <form onsubmit="addBlog(event)">
+            <div>
+                <div class="formT">
+                    <div>
+                        <label for="projek">Project Name</label>
+                        <input id="projek" type="name"/>
+                    </div>
+                    
+                    <div>
+                        <div class="date">
+                            <div class="start">
+                                <label for="startdate">Start Date</label>
+                                <input id="startdate" type="date"/>
+                            </div>
+                            <div class="end">
+                                <label for="enddate">End Date</label>
+                                <input id="enddate" type="date"/>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div>
+                            <label for="descrip">Description</label>
+                            <textarea id="descrip"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formB">
+                    <div>
+                        <label>Technologies</label>
+                        <div class="CB">
+                            <div class="CBL">
+                                <div>
+                                    <input class="INP"  value="node-js" id="ICBnoj" type="checkbox">
+                                    <label class="FT" for="ICBnoj">Node Js</label>
+                                </div>
+                                <div>
+                                    <input class="INP" value="react" id="ICBrej" type="checkbox">
+                                    <label class="FT" for="ICBrej">React Js</label>
+                                </div>
+                            </div>
+                            <div class="CBR">
+                                <div>
+                                    <input class="INP" value="java" id="ICBnej" type="checkbox">
+                                    <label class="FT" for="ICBnej">Java</label>
+                                </div>
+                                <div>
+                                    <input class="INP" value="python" id="ICBts" type="checkbox">
+                                    <label class="FT" for="ICBts">Python</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--punya mas rijal
+                <div class="MRJL">
+                    <label>Upload Image</label>
+                        <div class="input-blog-image-group">
+                        <label for="input-blog-image">
+                        <p>Attach File</p>
+                        <img src="assets/file.png" alt="file" />
+                        </label>
+                      <input type="file" id="input-blog-image" hidden />
+                    </div>
+                </div>-->
+                
+                <div class="formT">
+                    <label>Upload Image</label>
+                    <div class="formT-input-img">
+                        <label for="input-blog-image">
+                            <p>Choose</p>
+                            <img src="assets/file.png" alt="file" />
+                        </label>
+                        <input type="file" id="input-blog-image" hidden />
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button>submit</button>
+                </div>
+
+            </div>
+        </form>
+
+        <hr class="line" />
+        <div class="blog-post">
+            <h1>My Project</h1>
+            <div id="contents" class="post-kotak-BP">
+                <div class="kotak-BP">
+                    <div class="images">
+                        <img src="assets/catto.png" alt="cutecat">
+                    </div>
+                    <div class="BP-info">
+                        <div class="BP-title">
+                            <p>Catto Nyan ehe</p>
+                        </div>
+                        <div class="BP-duration">
+                            <p>posted at : 23 juni 1999</p>
+                        </div>
+                        <div class="BP-detail">
+                            <p>
+                                pada hari minggu kuturut ayah ke kota, naik delman istimewa kududuk di muka, kududuk di samping
+                            </p>
+                        </div>
+                    </div>
+                    <div class="BP-icon">
+                        <div>
+                            <i class="fa-brands fa-node-js fa-2xl"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-java fa-2xl"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-react fa-2xl"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-python fa-2xl"></i>
+                        </div>
+                    </div>
+
+                    <div class="BP-button">
+                        <div class="BP-button-edit">
+                            <button>edit</button>
+                        </div>
+                        <div class="BP-button-delete">
+                            <button>delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="kotak-BPdua">
+    
+                </div>
+                <div class="kotak-BPtiga">
+    
+                </div>-->
+            </div>
+        </div>
+
+        <script src="blog.js"></script>
+
+    </body>
+
+</html>

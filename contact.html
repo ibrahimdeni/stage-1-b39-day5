@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="icon" type="image/x-icon" href="https://avatars3.githubusercontent.com/u/34464790?s=220&v=4">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <nav>
+
+            <div class="nav-left">
+
+                <ul>
+                    <img src="assets/logo.png" alt="logo"/>
+                    <li>
+                        <a class="home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">My Project</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav-right">
+
+                <a href="contact.html">Contact Me</a>
+
+            </div>
+
+        </nav>
+
+
+        <h2>GET IN TOUCH</h2>
+        <form>
+
+            <div>
+                <label for="input-name">Name</label>
+                <input id="input-name" type="text">
+            </div>
+
+            <div>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="text">
+            </div>
+
+            <div>
+                <label for="input-phone">Phone Number</label>
+                <input id="input-phone" type="text">
+            </div>
+
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject">
+                    <option value=""></option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea id="input-message"></textarea>
+            </div>
+            
+            <div class="submit">
+                <button type="button" onclick="submitData()">submit</button>
+            </div>
+
+        </form>
+
+    </body>
+    
+    <script src="form.js"></script>
+
+</html>
