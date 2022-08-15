@@ -119,3 +119,8 @@ label {
 .sesi-atas .body .kanan .konten-bawah .paket-kanan {
     flex: 50%;
 }
+
+.sesi-bawah {
+    padding: 50px 50px;
+    text-align: justify;
+}
